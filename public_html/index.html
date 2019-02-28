@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XarVisionArt - Home</title>
+        <link rel="icon" href="/img/logo/favicon.png" type="image/png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light navbar-primary fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/logo_p1.png" alt="logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarToggleMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarToggleMenu">
+                            <a class="dropdown-item" href="gallery_single_canvas.html">Single Canvas</a>
+                            <a class="dropdown-item" href="gallery_multiple_canvas.html">Multiple Canvas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li> 
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary  my-2 my-sm-0 btn-block-12" type="submit">Search</button>
+                </form>
+                <span>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <section id="main">
+            <div class="container-fluid">
+                <section>
+                    <!--Slider-->
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="demo" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-caption">
+                                    <a href="#" class="btn btn-outline-secondary btn-block-6 btn-slider btn-lg">Gallery</a>
+                                    <a href="#" class="btn btn-outline-secondary btn-block-6 btn-slider btn-lg">About</a>
+                                </div>
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img_slider img-fluid" src="/img/slider/2447.png" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img_slider img-fluid" src="/img/slider/slide1.png" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img_slider img-fluid" src="/img/slider/pour_mockups.png" />
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <!--Jumbotron-->
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <div class="jumbotron">
+                                <h1 class="jumbo_h1">What we do?</h1>
+                                <h3 class="jumbo_h3">We love to turn creative ideas into beautiful things!</h3>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
+                <section>
+                    <!--Latest Products-->
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <h4 id="latestProduct_h4" align="center"><strong>Latest Products</strong></h4>
+                            <div class="row products-row justify-content-center">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="card card-bg">
+                                        <div class="card-body">
+                                            <img class="card-img-top latestProducts_item" src="/img/latest products/1.jpg" alt="latest_1" />
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="price">
+                                                <p class="price-text">Price: 180 $</p>
+
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block"><strong>Add to Cart</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="card card-bg">
+                                        <div class="card-body">
+                                            <img class="card-img-top latestProducts_item" src="/img/latest products/2.jpg" alt="latest_2" />
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="price">
+                                                <p class="price-text">Price: 180 $</p>                                          
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block"><strong>Add to Cart</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="card card-bg card-margin">
+                                        <div class="card-body">
+                                            <img class="card-img-top latestProducts_item" src="/img/latest products/3.jpg" alt="latest_3" />
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="price">
+                                                <p class="price-text">Price: 180 $</p>
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block"><strong>Add to Cart</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="card card-bg card-margin">
+                                        <div class="card-body">
+                                            <img class="card-img-top latestProducts_item" src="/img/latest products/6.jpg" alt="latest_6" />
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="price">
+                                                <p class="price-text">Price: 180 $</p>
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block"><strong>Add to Cart</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!--Blackfriday Products-->
+                        <div class="container-fluid">
+                            <h3 class="blackfriday_h3" align="center">Buy now</h3> 
+                            <hr />
+                            <div class="row row-margin justify-content-center">
+                                <div class="col-lg-8 col-md-12">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8">
+                                            <img class="img-fluid landscape_photo" src="img/blackfriday/9.jpg" alt="bf_1" />
+                                        </div>
+                                        <div class="col-lg-4 col-md-4">
+                                            <img class="img-fluid square_photo" src="img/blackfriday/8.jpg" alt="bf_2" />
+                                        </div>
+                                    </div>
+                                    <div class="row row-margin">
+                                        <div class="col-lg-4 col-md-4">
+                                            <img class="img-fluid img-fluid square_photo" src="img/blackfriday/7.jpg" alt="bf_3" />
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <img class="img-fluid landscape_photo" src="img/blackfriday/10.jpg" alt="bf_4" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 justify-content-center">
+                                    <img class="img-fluid bf_photo" src="img/blackfriday/blackfriday.png" />
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+                        <!--Delivery Banner-->
+                        <div class="container-fluid">
+                            <div class="row row-margin features-inner">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="baner-delivery">
+                                        <div class="f-icon">
+                                            <i class="fas fa-truck"></i>
+                                        </div>
+                                        <h6>Free Delivery</h6>
+                                        <p>Free Shipping on all order</p>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="baner-delivery">
+                                        <div class="f-icon">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </div>
+                                        <h6>Return Policy</h6>
+                                        <p>Free Shipping on all order</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="baner-delivery">
+                                        <div class="f-icon">
+                                            <i class="fas fa-headset"></i>
+                                        </div>
+                                        <h6>24/7 Support</h6>
+                                        <p>Free Shipping on all order</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="baner-delivery">
+                                        <div class="f-icon">
+                                            <i class="far fa-credit-card"></i>
+                                        </div>
+                                        <h6>Secure Payment</h6>
+                                        <p>Free Shipping on all order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="footer-column">
+                                    <h6>About Us</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros ante, convallis consectetur sem ut, tempor ullamcorper sem. Donec feugiat eros justo, ut eleifend ipsum faucibus quis. </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="footer-column">
+                                    <h6>Newsletter</h6>
+                                    <p>Stay update with our latest</p>
+                                    <form class="form-footer">
+                                        <div>
+                                            <input type="email" name="email" placeholder="Enter Email" pattern=".+@globex.com" size="25" required>
+                                        </div>
+                                        <div>
+                                            <input type="Submit" name="Submit" value="Submit" />  
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="footer-column">
+                                    <h6 class="instafeed-h6">Instagram Feed</h6>
+                                    <ul class="instafeed d-flex flex-wrap">
+                                        <li>
+                                            <img class="img-fluid footer-img" src="img/footer/f1.jpg" />
+                                        </li>     
+                                        <li>
+                                            <img class="img-fluid footer-img" src="img/footer/f2.jpg" />
+                                        </li>  
+                                        <li>
+                                            <img class="img-fluid footer-img" src="img/footer/f3.jpg" />
+                                        </li>  
+                                        <li>
+                                            <img class="img-fluid footer-img" src="img/footer/f4.jpg" />
+                                        </li>  
+                                        <li>
+                                            <img class="img-fluid footer-img" src="img/footer/f5.jpg" />
+                                        </li>  
+                                        <li>
+                                            <img class="img-fluid footer-img" src="img/footer/f6.jpg" />
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="footer-column">
+                                    <h6>Follow Us</h6>
+                                    <p>Let us be social</p>
+                                    <div class="footer-social">
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://twitter.com/">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                        <a href="https://ro.pinterest.com/">
+                                            <i class="fab fa-pinterest-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright ©2019 All rights reserved </p>
+                    </div>
+                </footer>
+        </section>
+
+    </body>
+</html>

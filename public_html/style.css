@@ -1,0 +1,649 @@
+body {
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+section {
+    padding-top: 25px;
+}
+
+.navbar {
+    background-color: #ebe9e9;
+}
+.navbar-light .navbar-collapse ul.navbar-nav li.active a, .navbar-light .navbar-collapse ul.navbar-nav li a:hover {
+    color: #12acce;
+    text-decoration: underline;
+}
+
+.navbar .navbar-collapse {
+    margin-top: auto;
+}
+
+.navbar .logo {
+    width: 125px;
+    padding: 6px;
+}
+
+.btn-primary {
+    background: #7fbecc;
+    border-color: #7fbecc;
+}
+
+.btn-primary:hover {
+    background: #6686a3;;
+    border-color: #6686a3;;
+}
+
+.fa-shopping-cart {
+    font-size: 27px;
+    margin-left: 10px;
+    color: #4e7191;
+}
+
+.img_slider {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 380px;
+}
+
+.btn-slider {
+    color: #ffffff;
+    border-color: #ffffff;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.row-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    /*background-color: #cfdad8;*/
+    background-image: url('img/PLUME_ICE.png');
+    background-repeat: round;
+}
+
+.jumbo_h1 {
+    color: #7fbecc;
+    text-indent: 20px;
+    text-shadow: 1px 2px royalblue;
+}
+
+.jumbo_h3 {
+    color: #527696;
+    text-indent: 10px;
+    font-style: italic;
+}
+
+.latestProducts_item {
+    height: 250px;
+}
+
+#latestProduct_h4 {
+    color:#e23873;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #be0b6a;
+}
+
+.price-text, .price-currency {
+    font-family: serif;
+    font-weight: 600;
+    color: #963362;
+}
+
+.products-row .card {
+    margin-bottom: 15px;
+}
+
+.landscape_photo {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.square_photo {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.bf_photo {
+    padding-top: 10px;
+}
+
+.blackfriday_h3 {
+    margin-top: 20px;
+    color: #ed2324;
+    font-weight: 700;
+    text-shadow: 2px 2px #242c3f;
+}
+
+.features-inner {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 40px 0;
+}
+
+.baner-delivery {
+    text-align: center;
+    color: #1d475f;
+    margin-top:10px;
+}
+
+.f-icon {
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #ebe9e9;
+    padding-top: 15px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+.footer-img {
+    height: 50px;
+    margin-right: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    font-size: 1.6rem;
+
+}
+footer a {
+    margin-right: 15px;
+}
+
+.form-footer {
+    text-align: center;
+}
+.fab.fa-instagram {
+    color: #3d3b40;
+}
+
+.fab.fa-twitter-square {
+    color: #1ca2f1;
+}
+
+.fab.fa-pinterest-square {
+    color: #cb2027;
+}
+
+.fab.fa-facebook {
+    color:#4267b2;
+}
+
+.form-footer input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8a8a8a;
+    padding-bottom: 7px;
+}
+
+.form-footer input[type=submit] {
+    margin-top: 10px;
+    width: 60%;
+    background-color: #9c3236;
+    border: none;
+    border-radius: 6px;
+    padding: 3px;
+    color: white;
+}
+
+.form-footer input[type=submit]:hover {
+    background-color: #731417;
+}
+
+.copyright p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+/* Contact Page*/
+
+.banner-contact {
+    background-image: url(/img/contact/contact-background.png);
+    width: 100%;
+    height: 380px;
+    background-repeat: round;
+    margin-bottom: 20px;
+
+}
+
+.contact-us {
+    color: #9eb5b1;
+    margin-top: 90px;
+    text-indent: 30px;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.get-in-touch {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #bfd4d0;
+}
+
+
+hr {
+    background-color: #f9fcfb;
+    width: 180px;
+    margin-left: 40px;
+    height: 2px;
+}
+
+.contact-first-column {
+    padding-left: 15px;
+}
+
+.contact-paragraph p {
+    margin: 1px 0 20px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #212529;
+    font-size: 1.5rem;
+}
+
+h5 {
+    color: #212529;  
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 2px;
+}
+
+
+.form-field, select {
+    border: none;
+    border-bottom: 1px solid #9eb5b1;
+    background: transparent;
+    color: #808080;
+}
+
+.form-field:focus, select:focus {
+    border-color: #4e7191;
+    text-shadow: 1px 1px white;
+    outline: none;
+}
+
+.input-margin {
+    margin-bottom: 20px;
+}
+
+.form-select, textarea {
+    width: 100%;
+    margin-top: 10px;
+    color: #808080;
+}
+
+.form-field, select, textarea {
+    cursor: pointer;
+}
+
+.follow-us-contact {
+    display: inline-block;
+}
+
+.follow-us-contact a .insta-w {
+    color: white;
+}
+
+/* About Us */
+
+.banner-about {
+    background-image: url(/img/about/about_8.png);
+    width: 100%;
+    height: 380px;
+    background-repeat: round;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    color: #b4c8c5;;
+    margin-top: 90px;
+    text-indent: 30px;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.about-us-subtitle {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #bfd4d0;
+}
+
+.birth-company {
+    font-size: 2.5rem;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #4c8e7a;
+    line-height: 30px;
+}
+
+.how-it-start {
+    margin-left: 25px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #727279;
+}  
+
+.company-description {
+    margin-left: 10px;
+    text-indent: 25px;
+    font-family: serif;
+}
+
+.company-hr {
+    margin-left: 20px;
+}
+
+.creative-team {
+    font-size: 2.5rem;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #1b9ab7;
+}
+
+.creative-team-subtitle, .work-with-us {
+    margin-left: 25px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #727279;
+}
+
+
+.jumbotron-about {
+    background-image: url(/img/about/Grey-Gradient-Background.png);
+    height: 170px;
+}
+
+.member-image {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 76px;
+}
+
+.member-list-item {
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+ul.member-list {
+    text-align: center;
+}
+
+.member-box {
+    margin-right: 32px;
+
+}
+
+.name-function {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.name-function p {
+    margin-bottom: 1px;
+}
+
+.carousel-about img {
+    height: 375px;
+    width: 100%;
+}
+
+.next-box {
+    background-color: #ebe9e9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.what-next {
+    font-size: 2.8rem;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #9c3236;
+    text-indent: 10px;
+}
+
+.contact-form input {
+    width: 100%;
+}
+
+.dropdown .dropdown-toggle:hover {
+    cursor: pointer;
+}
+
+/* Gallery */
+
+.h4-gallery {
+    margin-bottom: 20px;
+    color: #c8bebe;
+    text-shadow: bisque;
+    text-shadow: 2px 1px black;
+}
+aside {
+    margin-top: 65px;
+}
+
+aside h6 {
+    color: #7fbecc;  
+}
+
+.browse-category a, .product-filters span, .price-text{
+    text-decoration: none;
+    color: grey;
+    font-size: 0.85rem;
+}
+
+.price-text{
+    font-style: italic;
+}
+
+.badge-secondary {
+    background-color: #b8b3b0;
+}
+
+/* Product Page */
+
+.abstract-painting-1 {
+    margin-left: 10px;
+    font-size: 2rem;
+    color: cadetblue;
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+}
+
+.abstract-painting-price {
+    margin-left: 20px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #e90d45;
+    text-shadow: 2px 2px #011b28;
+}
+
+.category a, .stock a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 15px;
+}
+
+.stock .text-green {
+    color: green;
+}
+
+.category, .description_product, .abstract-painting-price, .abstract-painting-1, .buton {
+    margin-top:20px;
+}
+.default-text {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.description_product {
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+/* Check Out Page */
+
+.row-background {
+    background-color: #ebe9e9;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+
+.check_out_detalies_1 a, .check_out_detalies_2 a {
+    text-decoration: none;
+}
+
+.product_name h6 {
+    padding-top: 10px;
+}
+
+.check_out_detalies_1 span,
+.check_out_detalies_1 a, 
+.check_out_detalies_2 span,
+.check_out_detalies_2 a {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: #7b7676;
+}
+
+.check_out_price {
+    text-align: end;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3b3a3a;
+}
+
+.total-box {
+    text-align: end;
+    /*padding-right: 85px;*/
+}
+
+.total_text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.review_order_title {
+    background-color: #928e8e;
+    padding: 8px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.country-input {
+    width: 68%;
+}
+
+.country-label {
+    margin-right: 18px;
+}
+
+.select-background {
+    border: 1px solid #a09999;
+    background: white;
+    padding: 5px
+        
+}
+
+input[type=image] {
+    width: 50px;
+}
+
+.step-background {
+    background: blue;
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:663px) {
+    .btn-block-12 {
+        width: 100%;
+        display: block;
+    }
+
+    .btn-block-6 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .btn-block-6, .btn-block-mobile {
+        margin-bottom: 10px;
+    }
+
+    .carousel-item {
+        height: 250px;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .bf_photo {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .birth-company, .creative-team-subtitle, .how-it-start {
+        margin-top: 15px;
+    }
+
+    .about-img, .creative-team, .birth-company, .how-it-start, .creative-team-subtitle {
+        text-align: center;
+    }
+
+    .company-hr {
+        margin: 0 auto;
+    }
+    .country-input {
+        width: 50%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1080px) {
+    .last-name-input {
+        margin-top: 18px;
+    }
+    .country-input {
+        width: 80%;
+    }
+}
