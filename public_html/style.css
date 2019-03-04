@@ -163,10 +163,19 @@ footer ul li {
     list-style-type: none;
 }
 
+footer ul {
+    justify-content: center;
+}
+
 .footer-img {
     height: 50px;
     margin-right: 14px;
     margin-bottom: 5px;
+
+}
+
+.footer-img:hover {
+    cursor: pointer;
 }
 
 .footer-social {
@@ -175,6 +184,10 @@ footer ul li {
 }
 footer a {
     margin-right: 15px;
+}
+
+footer a:hover {
+    text-decoration: none
 }
 
 .form-footer {
@@ -507,7 +520,20 @@ aside h6 {
 }
 
 /* Product Page */
+.steps {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
+.steps a, .steps span {
+    color: #7fbecc;
+    text-decoration: none;
+}
+
+.steps a:hover {
+    color: #446b74;
+}
 .abstract-painting-1 {
     margin-left: 10px;
     font-size: 2rem;
@@ -623,7 +649,28 @@ input[type=image] {
     background: blue;
 }
 
+/*Thank You*/
 
+.thankyou_h1, .jumbo_p, .sent_email {
+    text-align: center;
+}
+
+.jumbotron .thankyou_h1 {
+    color: #7fbecc;
+    text-shadow: 1px 2px royalblue;
+}  
+
+.jumbo_p {
+    color: #4e7191;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.sent_email {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: grey;
+}
 
 
 
