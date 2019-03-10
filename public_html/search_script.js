@@ -1,3 +1,4 @@
+//search page jquery script
 $(document).ready(function(){
     let url = new URL(window.location.href);
     let search = url.searchParams.get("search");

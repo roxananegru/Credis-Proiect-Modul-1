@@ -30,8 +30,8 @@ section {
 }
 
 .btn-primary:hover {
-    background: #6686a3;;
-    border-color: #6686a3;;
+    background: #6686a3;
+    border-color: #6686a3;
 }
 
 .fa-shopping-cart {
@@ -131,6 +131,38 @@ section {
     color: #ed2324;
     font-weight: 700;
     text-shadow: 2px 2px #242c3f;
+}
+
+.blackfriday-item {
+    position: relative;
+}
+
+.blackfriday-item .hover-content {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 5px;
+    display: none;
+}
+
+.blackfriday-item:hover .hover-content {
+    display: block;
+}
+
+.blackfriday-item .hover-content .background {
+    background: rgba(79, 79, 79, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+}
+
+.blackfriday-item .hover-content .content {
+    position: relative;
+    text-align: center;
+    top: 85px;
 }
 
 .features-inner {
@@ -493,8 +525,8 @@ ul.member-list {
 .h4-gallery {
     margin-bottom: 20px;
     color: #c8bebe;
-    text-shadow: bisque;
     text-shadow: 2px 1px black;
+    font-size: 1.7rem;
 }
 aside {
     margin-top: 65px;
@@ -577,6 +609,12 @@ aside h6 {
 
 /* Check Out Page */
 
+.checkout-title h1 {
+    color: #b6c6c3;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 .row-background {
     background-color: #ebe9e9;
     margin-bottom: 15px;
@@ -626,11 +664,11 @@ aside h6 {
     color: white;
 }
 
-.country-input {
+.checkout-input {
     width: 68%;
 }
 
-.country-label {
+.checkout-label {
     margin-right: 18px;
 }
 
@@ -675,35 +713,6 @@ input[type=image] {
 
 
 /* media queries */
-@media screen and (max-width:663px) {
-    .btn-block-12 {
-        width: 100%;
-        display: block;
-    }
-
-    .btn-block-6 {
-        display: inline-block;
-        width: 49%;
-    }
-
-    .btn-block-6, .btn-block-mobile {
-        margin-bottom: 10px;
-    }
-
-    .carousel-item {
-        height: 250px;
-    }
-
-
-}
-
-@media screen and (max-width:768px) {
-    .bf_photo {
-        margin: 0 auto;
-        display: block;
-    }
-}
-
 @media screen and (max-width:992px) {
     .birth-company, .creative-team-subtitle, .how-it-start {
         margin-top: 15px;
@@ -716,18 +725,57 @@ input[type=image] {
     .company-hr {
         margin: 0 auto;
     }
-    .country-input {
-        width: 50%;
-    }
-
-
 }
 
-@media screen and (max-width: 1080px) {
-    .last-name-input {
-        margin-top: 18px;
+@media screen and (min-width:768px) and (max-width:992px) {
+    #search-input {
+        width: 100px;
     }
-    .country-input {
-        width: 80%;
+}
+
+@media screen and (max-width:768px) {
+    .bf_photo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .checkout-input {
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 0;
+    }
+
+    .browse-category {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:730px) and (min-width:634px) {
+    #search-btn {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:634px) {
+    .btn-block-6 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .btn-block-6, .btn-block-mobile {
+        margin-bottom: 10px;
+    }
+
+    .carousel-item {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    .btn-block-12 {
+        width: 100%;
+        display: block;
     }
 }

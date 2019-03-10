@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>XarVisionArt - Contact</title>
         <link rel="icon" href="/img/logo/favicon.png" type="image/png"/>
@@ -13,16 +13,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_min.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="script_min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light navbar-primary fixed-top">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo/logo_p1.png" alt="logo" class="logo" />
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -45,21 +46,24 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li> 
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="form-inline my-2 my-lg-0" id="search-form">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary  my-2 my-sm-0 btn-block-12" type="submit">Search</button>
                 </form>
                 <span>
-                    <a href="check_out_page.html">
+                    <a href="check_out_page.html" data-toggle="tooltip" title="0 products" data-placement="bottom">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                 </span>
             </div>
         </nav>
         <section id="main">
+            <div class="container-fluid">
             <section>
-                <div class="container-fluid">
                     <div class="row">
+                        <div class="col-12 text-center checkout-title">
+                            <h1>Check Out</h1>
+                        </div>
                         <div class="col-12 steps">
                             <span><a href="product_page.html">Cart </a>/</span>
                             <span><a href="check_out_page.html">Check Out </a>/</span>
@@ -69,80 +73,64 @@
                     <div class="row">
                         <div class="col-12 row-background">
                             <p class="review_order_title">Address</p>
-                            <table class="table table-hover">
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">Country</label> <br />
-                                            <input class="country-input" type="text" name="country" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">First Name</label> <br />
-                                            <input class="country-input" type="text" name="firstname" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">Last Name</label> <br />
-                                            <input class="country-input" type="text" name="lastname" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">Addres</label> <br />
-                                            <input class="country-input" type="text" name="addres" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">City</label> <br />
-                                            <input class="country-input" type="text" name="city" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">State</label> <br />
-                                            <input class="country-input" type="text" name="state" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">ZIP / Postal Code</label> <br />
-                                            <input class="country-input" type="text" name="zip" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">Phone Number</label> <br />
-                                            <input class="country-input" type="text" name="phone" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label" for="">Email Addres</label> <br />
-                                            <input class="country-input" type="text" name="email" />
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
+                            <form>
+                                <table class="table table-hover">
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">Country</label> <br />
+                                            <input class="checkout-input" type="text" name="country" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">First Name</label> <br />
+                                            <input class="checkout-input" type="text" name="firstname" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">Last Name</label> <br />
+                                            <input class="checkout-input" type="text" name="lastname" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">Addres</label> <br />
+                                            <input class="checkout-input" type="text" name="addres" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">City</label> <br />
+                                            <input class="checkout-input" type="text" name="city" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">State</label> <br />
+                                            <input class="checkout-input" type="text" name="state" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">ZIP / Postal Code</label> <br />
+                                            <input class="checkout-input" type="text" name="zip" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label">Phone Number</label> <br />
+                                            <input class="checkout-input" type="text" name="phone" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkout-label" for="email">Email Addres</label> <br />
+                                            <input class="checkout-input" id="email" type="text" name="email" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
                         </div>
                     </div>
                     <div class="row">
@@ -209,12 +197,13 @@
                     </div>
                     <div class="row">
                         <div class="col-12 row-background">
-                            <p class="review_order_title">Address</p>
+                            <p class="review_order_title">Secure Payment</p>
+                            <form>
                             <table class="table table-hover">
                                 <tr>
-                                    <td colspan="2">
-                                        <label class="country-label">Card Type</label> <br />
-                                        <select class="select-background country-input">
+                                    <td>
+                                        <label class="checkout-label">Card Type</label> <br />
+                                        <select class="select-background checkout-input">
                                             <option value="Visa">Visa</option>
                                             <option value="MasterCard">MasterCard</option>
                                             <option value="American Express">American Express</option>
@@ -223,25 +212,21 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">Credit Card Number</label> <br />
-                                            <input class="country-input" type="text" name="creditcardnumber" />
-                                        </form>
+                                    <td>
+                                            <label class="checkout-label">Credit Card Number</label> <br />
+                                            <input class="checkout-input" type="text" name="creditcardnumber" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                        <form>
-                                            <label class="country-label">Card CVV</label> <br />
-                                            <input class="country-input" type="text" name="ccv" />
-                                        </form>
+                                    <td>
+                                            <label class="checkout-label">Card CVV</label> <br />
+                                            <input class="checkout-input" type="text" name="ccv" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
+                                    <td>
                                         <label>Expiration Date</label> <br />
-                                        <select class="select-background country-input">
+                                        <select class="select-background checkout-input">
                                             <option value="month">Month</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -259,8 +244,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                        <select class="select-background country-input">
+                                    <td>
+                                        <select class="select-background checkout-input">
                                             <option value="month">Year</option>
                                             <option value="2018">2018</option>
                                             <option value="2019">2019</option>
@@ -270,6 +255,7 @@
                                     </td>
                                 </tr>
                             </table>
+                            </form>
                             <div>
                                 <form>
                                     <input type="image" alt="visa" name="imagebutton" src="/img/visa.png" />
@@ -280,83 +266,82 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
+            </div>
         </section>
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-column">
-                            <h6>About Us</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros ante, convallis consectetur sem ut, tempor ullamcorper sem. Donec feugiat eros justo, ut eleifend ipsum faucibus quis. </p>
-                        </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-column">
+                        <h6>About Us</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros ante, convallis consectetur sem ut, tempor ullamcorper sem. Donec feugiat eros justo, ut eleifend ipsum faucibus quis. </p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer-column">
-                            <h6>Newsletter</h6>
-                            <p>Stay update with our latest</p>
-                            <form class="form-footer">
-                                <div>
-                                    <input type="email" name="email" placeholder="Enter Email" pattern=".+@globex.com" size="25" required>
-                                </div>
-                                <div>
-                                    <input type="Submit" name="Submit" value="Submit" />  
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-column">
-                            <h6 class="instafeed-h6">Instagram Feed</h6>
-                            <ul class="instafeed d-flex flex-wrap">
-                                <li>
-                                    <img class="img-fluid footer-img" src="img/footer/f1.jpg" alt="instafeed-1" />
-                                </li>     
-                                <li>
-                                    <img class="img-fluid footer-img" src="img/footer/f2.jpg" alt="instafeed-2" />
-                                </li>  
-                                <li>
-                                    <img class="img-fluid footer-img" src="img/footer/f3.jpg" alt="instafeed-3" />
-                                </li>  
-                                <li>
-                                    <img class="img-fluid footer-img" src="img/footer/f4.jpg" alt="instafeed-4" />
-                                </li>  
-                                <li>
-                                    <img class="img-fluid footer-img" src="img/footer/f5.jpg" alt="instafeed-5" />
-                                </li>  
-                                <li>
-                                    <img class="img-fluid footer-img" src="img/footer/f6.jpg" alt="instafeed-6" />
-                                </li>  
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-column">
-                            <h6>Follow Us</h6>
-                            <p>Let us be social</p>
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://twitter.com/" target="_blank">
-                                    <i class="fab fa-twitter-square"></i>
-                                </a>
-                                <a href="https://ro.pinterest.com/" target="_blank">
-                                    <i class="fab fa-pinterest-square"></i>
-                                </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-column">
+                        <h6>Newsletter</h6>
+                        <p>Stay update with our latest</p>
+                        <form class="form-footer">
+                            <div>
+                                <input type="email" name="email" placeholder="Enter Email" required>
                             </div>
+                            <div>
+                                <input type="Submit" name="Submit" value="Submit" />  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-column">
+                        <h6 class="instafeed-h6">Instagram Feed</h6>
+                        <ul class="instafeed d-flex flex-wrap">
+                            <li>
+                                <img class="img-fluid footer-img" src="img/footer/f1.jpg" alt="instafeed-1" />
+                            </li>     
+                            <li>
+                                <img class="img-fluid footer-img" src="img/footer/f2.jpg" alt="instafeed-2" />
+                            </li>  
+                            <li>
+                                <img class="img-fluid footer-img" src="img/footer/f3.jpg" alt="instafeed-3" />
+                            </li>  
+                            <li>
+                                <img class="img-fluid footer-img" src="img/footer/f4.jpg" alt="instafeed-4" />
+                            </li>  
+                            <li>
+                                <img class="img-fluid footer-img" src="img/footer/f5.jpg" alt="instafeed-5" />
+                            </li>  
+                            <li>
+                                <img class="img-fluid footer-img" src="img/footer/f6.jpg" alt="instafeed-6" />
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-column">
+                        <h6>Follow Us</h6>
+                        <p>Let us be social</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                            <a href="https://ro.pinterest.com/" target="_blank">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>Copyright ©2019 All rights reserved </p>
-            </div>
-        </footer>
-    </section>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©2019 All rights reserved </p>
+        </div>
+    </footer>
 </body>
 </html>

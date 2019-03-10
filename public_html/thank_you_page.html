@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>XarVisionArt - Product Page</title>
         <link rel="icon" href="/img/logo/favicon.png" type="image/png"/>
@@ -13,16 +13,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_min.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="script_min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light navbar-primary fixed-top">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo/logo_p1.png" alt="logo" class="logo" />
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -44,12 +45,12 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li> 
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                 <form class="form-inline my-2 my-lg-0" id="search-form">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary  my-2 my-sm-0 btn-block-12" type="submit">Search</button>
                 </form>
                 <span>
-                    <a href="check_out_page.html">
+                    <a href="check_out_page.html" data-toggle="tooltip" title="0 products" data-placement="bottom">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                 </span>
@@ -75,7 +76,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </section>
             <footer>
                 <div class="container-fluid">
@@ -92,7 +92,7 @@
                                 <p>Stay update with our latest</p>
                                 <form class="form-footer">
                                     <div>
-                                        <input type="email" name="email" placeholder="Enter Email" pattern=".+@globex.com" size="25" required>
+                                        <input type="email" name="email" placeholder="Enter Email" required>
                                     </div>
                                     <div>
                                         <input type="Submit" name="Submit" value="Submit" />  

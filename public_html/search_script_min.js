@@ -1,0 +1,1 @@
+$(document).ready(function(){let a=new URL(window.location.href).searchParams.get("search");a&&($("#search-input").val(a),$("#search-value").html(a),$("#search-area").fadeIn())});
