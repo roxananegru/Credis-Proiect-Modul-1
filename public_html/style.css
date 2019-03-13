@@ -450,9 +450,9 @@ input.submit-contact {
 }
 
 
-.jumbotron-about {
-    background-image: url(/img/about/Grey-Gradient-Background.png);
-    height: 170px;
+.jumbotron {
+    background-image: url('img/about/img/PLUME_ICE.png');
+    height: 200px;
 }
 
 .member-image {

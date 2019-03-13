@@ -7,7 +7,7 @@ $(document).ready(function () {
         let search = $("#search-input").val();
         
         if(search) {
-            window.open("gallery_single_canvas.html?search="+search);
+            window.open("gallery_single_canvas.html?search=" + search);
         } else {
             window.open("gallery_single_canvas.html");
         }
@@ -15,6 +15,7 @@ $(document).ready(function () {
     //tooltip 
      $('[data-toggle="tooltip"]').tooltip(); 
 });
+
 //contact form validate function
 function formValidate(e) {
     e.preventDefault();
@@ -65,6 +66,6 @@ function formValidate(e) {
     if(hasError === false) {
         alert("Your message has been sent!");
     }
-    
+
     
 }
